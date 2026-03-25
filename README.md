@@ -29,7 +29,7 @@ uv --version
 Cloner le dépôt et se positionner dans le dossier du projet :
 ```bash
 git clone (lien du repository)
-cd fdxia-genai-tp
+cd TP-Formation-FDXIA
 ```
 
 Changer de branche (`dev` = solutions) :
@@ -49,6 +49,12 @@ Renseigner dans `.env` :
 - `GOOGLE_API_KEY`
 - `GOOGLE_PROJECT_ID`
 - `TAVILY_API_KEY`
+
+Pour l'obtention de votre clé API Gemini et la création de votre projet merci de vous rendre sur :
+https://aistudio.google.com/u/1/api-keys
+
+De même pour Tavily :
+https://www.tavily.com/
 
 Créer l'environnement Python et installer les dépendances (dans cet ordre) :
 
@@ -114,10 +120,11 @@ Lors du TP, positionnez-vous sur la branche correspondant au TP traité :
 - `TP3_travel_planner_Agent`
 
 ```bash
-git checkout -b TPX_nom_du_TP
+git switch TPX_nom_du_TP
 git pull origin TPX_nom_du_TP
-git push origin TPX_nom_du_TP
 ```
+
+Merci de ne pas push vos modifications afin de laisser les TP intactes.
 
 Traitez ensuite le notebook correspondant en suivant les instructions et en complétant les parties indiquées (repérées par des `# TODO` ou `...`).
 
@@ -126,3 +133,5 @@ Traitez ensuite le notebook correspondant en suivant les instructions et en comp
 En cas de blocage sur une fonction/classe pendant le TP, vous pouvez consulter la branche `dev` (solutions) pour débloquer et passer à la suite.
 
 Si vous souhaitez réaliser certaines parties à votre manière, n'hésitez pas ! Suivre les questions du TP permet de faciliter la correction, mais vous êtes libre de procéder comme vous le souhaitez.
+
+Bon Apprentissage !
