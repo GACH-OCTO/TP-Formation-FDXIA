@@ -35,7 +35,8 @@ class ProjectSettings(BaseModel):
     llm_thinking_budget: int = Field(default=1000, ge=0)
 
     # For RAG (Retrieval Augmented Generation)
-    rag_embedding_model_name: str = "gemini-embedding-001"
+    rag_embedding_model_name: str = "gemini-embedding-2-preview"
+    rag_embedding_requests_per_minute: int = Field(default=50, ge=1)
 
 
 project_settings = ProjectSettings()
